@@ -1,0 +1,41 @@
+
+
+.nav {
+    text-decoration: none;
+    color: #f06a1d;
+    font-size: 25px;
+}
+
+.n {
+    text-align: center;
+}
+
+
+.sing_text {
+    font-style: normal;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #595959;
+
+}
+
+.description_text{
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #595959;
+}
+
+.a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 70px;
+    color: #f06a1d;
+    text-decoration: none;
+}
+

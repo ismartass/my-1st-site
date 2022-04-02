@@ -1,0 +1,33 @@
+
+
+.nav {
+    text-decoration: none;
+    color: #f06a1d;
+    font-size: 25px;
+}
+
+
+.n {
+    text-align: center;
+}
+
+.li {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 50px;
+    color: #595959;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+ul a:hover, ul a:active{
+    color: #f06a1d;
+}

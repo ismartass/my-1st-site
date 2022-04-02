@@ -1,0 +1,45 @@
+{% extends  'base.html' %}
+
+{% load static %}
+
+{% load my_filter %}
+
+
+
+{% block css_additional %}
+<link rel="stylesheet" href="{% static 'horoscope/css/zodiac_info.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    {{title|title}}
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'includes/nav_bar.html' %}
+
+    <h2 class="sing_text">"{{title|title}}"  /  "{{description|split|first}}"</h2>
+
+    {% if description is None %}
+        <h1 class="description_text">Неизвестный знак зодиака - {{title}}</h1>
+    {% else %}
+        <h1 class="description_text">{{description}}</h1>
+ {% endif %}
+
+
+
+
+
+        <h1 class="sing_text"> Стихия знака зодиака <br>
+            <a class="a" href="{% url 'horoscope_type' element=sign_type  %}">{{sign_type|title}}</a></h1>
+
+
+
+
+
+
+
+{% endblock %}

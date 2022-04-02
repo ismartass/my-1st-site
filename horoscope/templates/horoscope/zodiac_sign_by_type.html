@@ -1,0 +1,36 @@
+{% extends  'base.html' %}
+
+
+{% load static %}
+
+
+
+{% block css_additional %}
+<link rel="stylesheet" href="{% static 'horoscope/css/zodiac_sign_by_type.css' %}">
+{% endblock %}
+
+{% block title %}
+    {{title|title}}
+{% endblock %}
+
+</head>
+
+
+{% block content %}
+
+{% include 'includes/nav_bar.html' %}
+
+
+    <ul>
+        {% for sign in list_sign_type %}
+            <li><a class="li" href=" {% url 'horoscope_name' sign_zodiac=sign  %}"> {{sign|title}}</a></li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}
+
+
+
+
+</html>
